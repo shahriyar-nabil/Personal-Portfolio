@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    background: linear-gradient(to right, #A1C9D1 , #DDFFFB);
+    font-family: "DM Sans", sans-serif;
+    line-height: 0;
+}
+.container{
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+/* profile section css starts */
+#profile_pic{
+    margin-top: 65px;
+}
+#profile_pic .container .image{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+#profile_pic .container .image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+/* profile section css ends */
+
+
+/* username section css starts */
+#name{
+    margin: 26px 0;
+}
+
+#name .container .username h1{
+    font-size: 20px;
+    font-weight: 700;
+    color: #383A36;
+    letter-spacing: 1px;
+}
+/* username section css ends */
+
+/* bio section's css starts here */
+#bio_content{
+    margin: 29px 0;
+}
+#bio_content .container .bio h2{
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.4px;
+    color: #383A36;
+}
+/* bio section's css ends here */
+
+
+
+/* Social section starts here */
+#social_card{
+    margin-top: 16px;
+}
+#social_card .container{
+    flex-direction: column;
+}
+#social_card .container .card{
+    width: 680px;
+    height: 60px;
+    margin-bottom: 16px;
+    background: #ffff;
+    border-radius: 30px;
+    display: flex;
+    transition: 0.3s;
+    box-shadow: 5px 10px 15px -15px #353535;
+}
+#social_card .container .card:hover{
+    scale: 1.1;
+    box-shadow: 5px 5px 5px -5px #353535;
+}
+#social_card .container .card .logo{
+    width: 10%;
+}
+
+#social_card .container .card .logo i{
+    line-height: 60px;
+    font-size: 32px;
+}
+/* facebook color */
+#social_card .container .card:nth-child(1) .logo i{
+    color: #316FF6;
+}
+/* instagram color */
+#social_card .container .card:nth-child(2) .logo i{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* github color */
+#social_card .container .card:nth-child(3) .logo i{
+    color: #2b3137;
+}
+/* Gmail color */
+#social_card .container .card:nth-child(4) .logo i{
+    color: #ff4343;
+}
+/* social account link css starts here */
+#social_card .container .card .link{
+    width: 90%;
+    margin-left: -35px;
+    line-height: 60px;
+    text-transform: capitalize;
+}
+#social_card .container .card .link h3{
+    font-size: 16px;
+    color: #383A36;
+}
+/* Social section ends here */
+
+/* responsive design starts here */
+@media (max-width: 360px){
+    #social_card .container .card{
+        width: 358px;
+        height: 57px;
+        transition: 0.3s;
+    }
+    #social_card .container .card .logo{
+        width: 15%;
+    }
+    #social_card .container .card .logo i{
+        line-height: 57px;
+        font-size: 32px;
+    }
+}
+/* responsive design ends here */
